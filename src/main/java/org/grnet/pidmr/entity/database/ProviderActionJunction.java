@@ -1,6 +1,6 @@
 package org.grnet.pidmr.entity.database;
 
-import com.vladmihalcea.hibernate.type.json.JsonType;
+//import io.hypersistence.utils.hibernate.type.json.JsonType;
 import jakarta.persistence.Column;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
@@ -10,7 +10,9 @@ import jakarta.persistence.MapsId;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.annotations.Type;
+import org.hibernate.type.SqlTypes;
 
 import java.util.Objects;
 import java.util.Set;
@@ -32,8 +34,9 @@ public class ProviderActionJunction {
     @MapsId("actionId")
     private Action action;
 
-    @Type(JsonType.class)
-    @Column(name = "endpoints", columnDefinition = "jsonb")
+   // @Type(JsonType.class)
+   @JdbcTypeCode(SqlTypes.JSON)
+   @Column(name = "endpoints", columnDefinition = "jsonb")
     private Set<Endpoint> endpoints;
 
     public ProviderActionJunction(Provider provider, Action action, Set<Endpoint> endpoints) {
