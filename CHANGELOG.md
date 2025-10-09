@@ -31,6 +31,9 @@ According to [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) , the `Unr
 -   [#149](https://github.com/FC4E-WP5/fc4eosc-PIDMR-api/pull/149) - PIDMR-254 Add Image Upload Endpoint with Provider-Based Folder Structure.
 -   [#150](https://github.com/FC4E-WP5/fc4eosc-PIDMR-api/pull/150) - PIDMR-256 Handle PKIX path validation failed with user-friendly error message.
 -   [#138](https://github.com/FC4E-WP5/fc4eosc-PIDMR-api/pull/138) - PIDMR-238 Create Endpoint for Getting a Provider by ID for Users
+-   [#159](https://github.com/FC4E-WP5/fc4eosc-PIDMR-api/pull/159) - PIDMR-262 Upgrade to Quarkus 3.27
+-   [#160](https://github.com/FC4E-WP5/fc4eosc-PIDMR-api/pull/160) - PIDMR-2664 Create trivy.yml
+
 
 ### Changed
 
@@ -39,7 +42,8 @@ According to [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) , the `Unr
 -   [#140](https://github.com/FC4E-WP5/fc4eosc-PIDMR-api/pull/140) - PIDMR-240: The supported modes in API are not returned in an order
 -   [#141](https://github.com/FC4E-WP5/fc4eosc-PIDMR-api/pull/141) - PIDMR-240 The supported modes in API are not returned in an order (fix)
 -   [#148](https://github.com/FC4E-WP5/fc4eosc-PIDMR-api/pull/148) - PIDMR-258 Minor fixes in unit tests
-
+-   [#164](https://github.com/FC4E-WP5/fc4eosc-PIDMR-api/pull/1464) - PIDMR-263 Clean project from commented code of latest quarkus upgrade
+-   [#162](https://github.com/FC4E-WP5/fc4eosc-PIDMR-api/pull/1462) - PIDMR-265 Update trivy.yml #162
 
 ## 2.4.0 - 2025-03-27
 ---
